@@ -1,0 +1,8 @@
+=== WAF DEMO RESULTS ===
+1. SAFE REQUEST:
+Status: 000
+2. XSS ATTACK BLOCKED:
+Status: 000
+3. DEMO PAGE:
+4. AUDIT LOGS:
+XSS blocked entries appear here after attacks
