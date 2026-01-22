@@ -10,3 +10,4 @@ curl http://localhost:8080/get                    # ✅ 200 OK
 curl "http://localhost:8080/?xss=<script>"        
 tail logs/audit.log                              
 
+readme
