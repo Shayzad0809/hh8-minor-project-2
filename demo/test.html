@@ -1,0 +1,7 @@
+<!DOCTYPE html>
+<html><body>
+<h1>🎯 WAF Demo - hh8-minor-project-2</h1>
+<p>✅ <a href="http://localhost:8080/get" target="_blank">SAFE Request → PASSES</a></p>
+<p>❌ <a href="http://localhost:8080/?xss=<script>alert(1)</script>" target="_blank">XSS Attack → BLOCKED</a></p>
+<p>📊 Logs: <code>tail logs/audit.log</code></p>
+</body></html>
