@@ -12,7 +12,7 @@ tail logs/audit.log
 
 
 f
-f
+
 
 
 
