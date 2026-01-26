@@ -11,7 +11,7 @@ curl "http://localhost:8080/?xss=<script>"
 tail logs/audit.log                              
 
 
-f
+
 
 
 
