@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///opt/homebrew/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.98 scan initiated Thu Feb  5 12:13:17 2026 as: nmap -sV -p 20-1000 -oX scan.xml scanme.nmap.org -->
+<nmaprun scanner="nmap" args="nmap -sV -p 20-1000 -oX scan.xml scanme.nmap.org" start="1770273797" startstr="Thu Feb  5 12:13:17 2026" version="7.98" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="981" services="20-1000"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="45.33.32.156" addrtype="ipv4"/>
+<hostnames>
+<hostname name="scanme.nmap.org" type="user"/>
+</hostnames>
+</hosthint>
+<taskprogress task="Connect Scan" time="1770273814" percent="23.07" remaining="57" etc="1770273871"/>
+<taskprogress task="Connect Scan" time="1770273835" percent="61.74" remaining="24" etc="1770273859"/>
+<host starttime="1770273797" endtime="1770273866"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="45.33.32.156" addrtype="ipv4"/>
+<hostnames>
+<hostname name="scanme.nmap.org" type="user"/>
+<hostname name="scanme.nmap.org" type="PTR"/>
+</hostnames>
+<ports><extraports state="closed" count="978">
+<extrareasons reason="conn-refused" count="978" proto="tcp" ports="20-21,23-79,81-444,446-1000"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="6.6.1p1 Ubuntu 2ubuntu2.13" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:6.6.1p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" version="2.4.7" extrainfo="(Ubuntu)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.7</cpe></service></port>
+<port protocol="tcp" portid="445"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="microsoft-ds" method="table" conf="3"/></port>
+</ports>
+<times srtt="258506" rttvar="12462" to="308354"/>
+</host>
+<runstats><finished time="1770273866" timestr="Thu Feb  5 12:14:26 2026" summary="Nmap done at Thu Feb  5 12:14:26 2026; 1 IP address (1 host up) scanned in 69.07 seconds" elapsed="69.07" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
