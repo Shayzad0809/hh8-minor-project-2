@@ -10,3 +10,10 @@ curl http://localhost:8080/get                    # ✅ 200 OK
 curl "http://localhost:8080/?xss=<script>"       # ❌ 403 BLOCKED  
 tail logs/audit.log                              # 📊 XSS BLOCK LOGS
 
+## ✅ VERIFIED WORKING COMMANDS
+```bash
+nginx -c config/nginx.conf -p ~/Desktop/hh8-minor-project-2/
+# Demo:
+ /usr/bin/curl http://localhost:8080/get                    # 200 OK ✅
+ /usr/bin/curl "http://localhost:8080/?xss=<script>"       # 403 ❌
+
